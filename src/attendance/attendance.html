@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+    <div class="attendance-container">
+        <form id="attendanceForm">
+            <div class="attendance-row">
+                <div class="attendance-box">
+                    <label>Lecture Component (%) <span class="badge">100%</span></label>
+                    <input type="number" name="lecture" placeholder="Enter percentage" min="0" max="100" required>
+                </div>
+                <div class="attendance-box">
+                    <label>Practical Component (%) <span class="badge">50%</span></label>
+                    <input type="number" name="practical" placeholder="Enter percentage" min="0" max="100">
+                </div>
+            </div>
+            <div class="attendance-row">
+                <div class="attendance-box">
+                    <label>Tutorial Component (%) <span class="badge">25%</span></label>
+                    <input type="number" name="tutorial" placeholder="Enter percentage" min="0" max="100">
+                </div>
+                <div class="attendance-box">
+                    <label>Skilling Component (%) <span class="badge">25%</span></label>
+                    <input type="number" name="skilling" placeholder="Enter percentage" min="0" max="100">
+                </div>
+            </div>
+            <div class="attendance-actions">
+                <button type="submit" class="calculate-btn">Calculate Attendance</button>
+                <button type="reset" class="reset-btn">&#8635; Reset</button>
+            </div>
+        </form>
+    </div>
+    <script src="attendance.js"></script>
+</body>
+</html>

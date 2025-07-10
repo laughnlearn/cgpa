@@ -1,0 +1,83 @@
+.wow-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.wow-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.wow-card:hover {
+  box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.25);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.wow-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1e3c72;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  text-shadow: 0 2px 8px #43c6ac33;
+}
+
+.wow-btn {
+  background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px #43c6ac33;
+  transition: background 0.2s, transform 0.2s;
+}
+.wow-btn:hover {
+  background: linear-gradient(90deg, #191654 0%, #43c6ac 100%);
+  transform: scale(1.04);
+}
+
+.wow-delete {
+  background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%) !important;
+  color: #fff !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px #ff512f33;
+  transition: background 0.2s, transform 0.2s;
+}
+.wow-delete:hover {
+  background: linear-gradient(135deg, #dd2476 0%, #ff512f 100%) !important;
+  transform: scale(1.1);
+}
+
+.wow-label {
+  color: #191654;
+  font-weight: 500;
+}
+
+.wow-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .wow-card {
+    padding: 1.2rem 0.5rem;
+  }
+  .wow-title {
+    font-size: 1.3rem;
+  }
+}
