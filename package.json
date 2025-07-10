@@ -1,7 +1,7 @@
 {
   "name": "cgpa-calculator-klu",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "homepage": "https://laughnlearn.github.io/cgpa",
   "scripts": {
